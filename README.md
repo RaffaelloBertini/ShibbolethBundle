@@ -2,11 +2,12 @@ ShibbolethBundle
 ================
 
 This bundle adds a shibboleth authentication provider for your Symfony2 project.
+Forked from moreas/ShibbolethBundle
 
 Requirements
 ------------
 * [PHP][@php] 5.3.3 and up.
-* [Symfony 2.1][@symfony]
+* Symfony 2.6
 
 Installation
 ------------
@@ -18,20 +19,20 @@ ShibbolethBundle is composer-friendly.
 ```js
     "require": {
         ...
-        "kuleuven/shibboleth-bundle": "dev-master"
+        "bridgeman-share/shibboleth-bundle": "dev-master"
         ...
     },
    "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:rmoreas/ShibbolethBundle.git"
+            "type": "git",
+            "url": "git@github.com:RaffaelloBertini/ShibbolethBundle.git"
         }
     ],	
 ```
 Now tell composer to download the bundle by running the command:
 
 ```bash
-    php composer.phar update kuleuven/shibboleth-bundle
+    php composer.phar update bridgeman-share/shibboleth-bundle
 ```
 
 Composer will install the bundle to your project's vendor/kuleuven directory..
